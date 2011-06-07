@@ -71,6 +71,10 @@ Client for Apache Cassandra
    <pearinstaller>
     <min>1.4.0</min>
    </pearinstaller>
+   <package>
+    <name>thrift</name>
+    <channel>benjaminhawkeslewis.github.com</channel>
+   </package>
   </required>
  </dependencies>
  <phprelease/>
