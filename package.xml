@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.9.2" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>phpcassa</name>
+ <channel>benjaminhawkeslewis.github.com</channel>
+ <summary>Client for Apache Cassandra</summary>
+ <description>Client for Apache Cassandra</description>
+ <lead>
+  <name>Tyler Hobbs</name>
+  <user>thobbs</user>
+  <email>tyler@datastax.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2011-06-07</date>
+ <time>16:17:09</time>
+ <version>
+  <release>0.8.0snapshot20110607161709</release>
+  <api>0.8.0</api>
+ </version>
+ <stability>
+  <release>snapshot</release>
+  <api>devel</api>
+ </stability>
+ <license>BSD</license>
+ <notes>
+Client for Apache Cassandra
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <dir name="doc">
+    <file name="changelog.rst" role="data"/>
+    <file name="conf.py" role="data"/>
+    <file name="index.rst" role="data"/>
+    <file name="installation.rst" role="data"/>
+    <file name="Makefile" role="data"/>
+    <file name="sphinxtogithub.py" role="data"/>
+    <file name="troubleshooting.rst" role="data"/>
+    <file name="tutorial.rst" role="data"/>
+    <file name="__init__.py" role="data"/>
+   </dir> <!-- /doc -->
+   <dir name="test">
+    <file name="all_tests.php" role="test"/>
+    <file name="cassandra.yaml" role="test"/>
+    <file name="test_autopacking.php" role="test"/>
+    <file name="test_columnfamily.php" role="test"/>
+    <file name="test_large_ops.php" role="test"/>
+    <file name="test_pooling.php" role="test"/>
+    <file name="test_sysmanager.php" role="test"/>
+   </dir> <!-- /test -->
+   <dir name="thrift" baseinstalldir="Thrift/">
+    <dir name="packages">
+     <dir name="cassandra">
+      <file name="Cassandra.php" role="php"/>
+      <file name="cassandra_constants.php" role="php"/>
+      <file name="cassandra_types.php" role="php"/>
+     </dir> <!-- /thrift/packages/cassandra -->
+    </dir> <!-- /thrift/packages -->
+   </dir> <!-- /thrift -->
+   <file name="columnfamily.php" role="php"/>
+   <file name="connection.php" role="php"/>
+   <file name="INSTALLING" role="doc"/>
+   <file name="LICENSE" role="data"/>
+   <file name="sysmanager.php" role="php"/>
+   <file name="uuid.php" role="php"/>
+  </dir> <!-- / -->
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.3.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease/>
+ <changelog>
+  <release>
+   <version>
+    <release>0.8.0snapshot20110607161709</release>
+    <api>0.8.0</api>
+   </version>
+   <stability>
+    <release>snapshot</release>
+    <api>devel</api>
+   </stability>
+   <date>2011-06-07</date>
+   <license>BSD</license>
+   <notes>
+Client for Apache Cassandra
+   </notes>
+  </release>
+ </changelog>
+</package>
