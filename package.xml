@@ -49,7 +49,7 @@ Client for Apache Cassandra
     <file name="test_pooling.php" role="test" />
     <file name="test_sysmanager.php" role="test" />
    </dir> <!-- /test -->
-   <dir baseinstalldir="/Thrift/" name="thrift">
+   <dir baseinstalldir="/" name="thrift">
     <dir name="packages">
      <dir name="cassandra">
       <file name="Cassandra.php" role="php" />
@@ -62,7 +62,6 @@ Client for Apache Cassandra
    <file name="connection.php" role="php" />
    <file name="INSTALLING" role="doc" />
    <file name="LICENSE" role="data" />
-   <file name="phpcassa-0.8.0snapshot20110607161709.tgz" role="data" />
    <file name="sysmanager.php" role="php" />
    <file name="uuid.php" role="php" />
   </dir> <!-- / -->
@@ -81,5 +80,12 @@ Client for Apache Cassandra
    </package>
   </required>
  </dependencies>
- <phprelease />
+ <phprelease>
+     <filelist>
+        <!-- The Thrift package installs into Thrift, so we need to retarget thrift at Thrift -->
+        <install name="thrift/packages/cassandra/Cassandra.php" as="/Thrift/packages/cassandra/Cassandra.php"/>
+        <install name="thrift/packages/cassandra/cassandra_constants.php" as="/Thrift/packages/cassandra/cassandra_constants.php"/>
+        <install name="thrift/packages/cassandra/cassandra_types.php" as="/Thrift/packages/cassandra/cassandra_types.php"/>
+     </filelist>
+ </phprelease>
 </package>
