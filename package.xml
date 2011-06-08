@@ -28,7 +28,7 @@
 Client for Apache Cassandra
  </notes>
  <contents>
-  <dir baseinstalldir="/" name="/">
+  <dir baseinstalldir="/phpcassa/" name="/">
    <dir name="doc">
     <file name="changelog.rst" role="data" />
     <file name="conf.py" role="data" />
@@ -49,7 +49,7 @@ Client for Apache Cassandra
     <file name="test_pooling.php" role="test" />
     <file name="test_sysmanager.php" role="test" />
    </dir> <!-- /test -->
-   <dir name="thrift">
+   <dir baseinstalldir="/Thrift/" name="thrift">
     <dir name="packages">
      <dir name="cassandra">
       <file name="Cassandra.php" role="php" />
